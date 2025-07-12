@@ -1,3 +1,9 @@
+import sys
+import os
+
+# Add the project root to the Python path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
+
 from spell_checker.app.solid.vocabulary import SimpleVocabulary
 from spell_checker.app.solid.distance_metric import EditDistance
 from spell_checker.app.solid.spell_checker import SpellChecker

@@ -10,6 +10,14 @@ To install the package, run the following command:
 pip install -e .
 ```
 
+## Usage
+
+To run the example script, use the following command:
+
+```bash
+python3 spell_checker/app/main.py
+```
+
 ## SOLID Principles
 
 This project is designed to demonstrate the application of SOLID principles in a real-world scenario. Each principle is explained below, with a reference to how it's implemented in the codebase.
