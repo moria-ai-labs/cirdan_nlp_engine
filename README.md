@@ -2,6 +2,14 @@
 
 A simple spell checker library built following SOLID principles.
 
+## Installation
+
+To install the package, run the following command:
+
+```bash
+pip install -e .
+```
+
 ## SOLID Principles
 
 This project is designed to demonstrate the application of SOLID principles in a real-world scenario. Each principle is explained below, with a reference to how it's implemented in the codebase.
