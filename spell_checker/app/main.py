@@ -11,6 +11,17 @@ from spell_checker.app.solid.distance_metric import EditDistance
 from spell_checker.app.solid.spell_checker import SpellChecker
 
 def word_validation(word: str, metric: str = "levenshtein"):
+    """
+    Checks if a word is in the vocabulary. If not, it returns the closest word
+    based on the specified distance metric.
+
+    Args:
+        word: The word to validate.
+        metric: The distance metric to use ('levenshtein' or 'editdistance').
+
+    Returns:
+        True if the word is in the vocabulary, otherwise the closest word.
+    """
     vocabulary = SimpleVocabulary({"apple", "banana", "cherry", "date"})
 
     if metric == "levenshtein":
