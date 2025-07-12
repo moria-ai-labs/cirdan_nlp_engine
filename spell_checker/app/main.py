@@ -5,12 +5,12 @@ import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
 
 from spell_checker.app.solid.vocabulary import SimpleVocabulary
-from spell_checker.app.solid.distance_metric import EditDistance
+from spell_checker.app.solid.levenshtein_distance import LevenshteinDistance
 from spell_checker.app.solid.spell_checker import SpellChecker
 
 def word_validation(word: str):
     vocabulary = SimpleVocabulary({"apple", "banana", "cherry", "date"})
-    distance_metric = EditDistance()
+    distance_metric = LevenshteinDistance()
     spell_checker_instance = SpellChecker(vocabulary, distance_metric)
     return spell_checker_instance.word_validation(word)
 
