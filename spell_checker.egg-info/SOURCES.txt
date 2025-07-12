@@ -3,4 +3,5 @@ setup.py
 spell_checker.egg-info/PKG-INFO
 spell_checker.egg-info/SOURCES.txt
 spell_checker.egg-info/dependency_links.txt
+spell_checker.egg-info/requires.txt
 spell_checker.egg-info/top_level.txt
